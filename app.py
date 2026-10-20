@@ -16,7 +16,9 @@ ROOT=Path(__file__).resolve().parent
 st.set_page_config(page_title='ReviewTrace', page_icon='📊', layout='wide')
 st.markdown('''<style>
 html{font-size:18px}
-.block-container{padding-top:2rem;padding-bottom:3rem;max-width:1140px}
+.block-container{padding-top:4.25rem;padding-bottom:3rem;max-width:1140px}
+.reviewtrace-eyebrow{color:inherit;font-size:1rem;font-weight:700;letter-spacing:.055em;line-height:1.5;margin:0 0 .35rem}
+[data-testid="stSidebarUserContent"]{padding-top:.75rem}
 [data-testid="stMarkdownContainer"] p,
 [data-testid="stMarkdownContainer"] li,
 [data-testid="stText"]{font-size:1rem;line-height:1.6}
@@ -24,7 +26,7 @@ html{font-size:18px}
 [data-testid="stWidgetLabel"] p,
 [data-testid="stTabs"] [role="tab"] p,
 button p{font-size:1rem}
-[data-testid="stSidebar"] h1{font-size:1.8rem;line-height:1.25;overflow-wrap:break-word}
+[data-testid="stSidebar"] h1{font-size:1.8rem;line-height:1.25;overflow-wrap:break-word;padding-top:0;margin-top:0}
 [data-testid="stSidebar"] h2{font-size:1.45rem}
 [data-testid="stSidebar"] h3{font-size:1.2rem}
 [data-testid="stSidebar"] input{font-size:1rem}
@@ -36,9 +38,9 @@ h1,h2,h3{letter-spacing:-.025em}
 }
 [data-testid="stMetricValue"]{font-weight:700}
 [data-testid="stTabs"] [role="tab"]{min-height:3rem}
-@media(max-width:640px){.block-container{padding-top:1.25rem}}
+@media(max-width:640px){.block-container{padding-top:4rem}}
 </style>''',unsafe_allow_html=True)
-st.caption('CUSTOMER FEEDBACK → PRODUCT INSIGHTS')
+st.markdown('<p class="reviewtrace-eyebrow">CUSTOMER FEEDBACK → PRODUCT INSIGHTS</p>',unsafe_allow_html=True)
 st.title('ReviewTrace')
 st.write('Understand what customers are saying, prepare a weekly brief, and save it when you’re ready.')
 st.markdown('**Start here:** review the insights → read both outputs → approve and save in **4. Save & export**.')
