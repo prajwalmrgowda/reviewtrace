@@ -35,6 +35,9 @@ doc_id=''
 credentials_info=None
 connection_error=None
 with st.sidebar:
+    st.title('ReviewTrace Workspace')
+    st.caption('Choose your reviews, connect your notes, and prepare your update.')
+    st.divider()
     st.header('Your reviews')
     st.caption('The sample is ready to explore. Upload a CSV only if you want to use your own reviews.')
     upload=st.file_uploader('Upload your reviews (optional)',type='csv',help='UTF-8 CSV, up to 5 MB / 10,000 rows. Required columns: date, review_text, source_url.')
