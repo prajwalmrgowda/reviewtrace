@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-20",
+  "top_themes": [
+    {
+      "theme": "Usage limits & upsell",
+      "count": 35
+    },
+    {
+      "theme": "Answer accuracy",
+      "count": 19
+    },
+    {
+      "theme": "Subscription billing & refunds",
+      "count": 16
+    }
+  ],
+  "weekly_pulse": "### Weekly Product Pulse — 2026-10-20\n**Evidence:** 512 entries in a 12-week window; 425 unclassified. Convenience sample, not representative.\n**Top three themes:** Usage limits & upsell (35/512); Answer accuracy (19/512); Subscription billing & refunds (16/512).\n**Three verbatim excerpts:**\n- “I just sent a few pictures and then it wouldn't let me continue, even though I was in” — APPLE_14684835197, 2026-10-19 [source](https://apps.apple.com/us/app/chatgpt/id6448311069?see-all=reviews&reviewId=14684835197)\n- “It makes a lot of mistakes now!!!” — APPLE_14684382677, 2026-10-18 [source](https://apps.apple.com/us/app/chatgpt/id6448311069?see-all=reviews&reviewId=14684382677)\n- “I dint see any difference so i believe their subscription is pointless specially for 22$ a month but” — APPLE_14680607843, 2026-10-18 [source](https://apps.apple.com/us/app/chatgpt/id6448311069?see-all=reviews&reviewId=14680607843)\n**Fee signal:** Renewal/cancellation and refund confusion recurs in 3 reviews APPLE_14680607843, R010, R011. Reports do not establish billing defects.\n**Recommended actions:**\n1. Clarify renewal timing and cancellation in subscription settings.\n2. Publish platform-specific refund guidance.\n3. Track billing support contacts weekly to evaluate improvement.\n",
+  "identified_fee_issue": "ChatGPT subscription renewal charges and cancellation/refund expectations",
+  "explanation_bullets": [
+    "ChatGPT subscriptions may be billed through chatgpt.com, Apple App Store, or Google Play; the purchase platform manages cancellation.",
+    "Subscriptions can renew unless canceled before the next billing date; OpenAI recommends canceling at least 24 hours beforehand.",
+    "Removing the mobile app does not cancel an active subscription.",
+    "Canceling stops future renewals but does not automatically refund a previous charge.",
+    "For web or Google Play purchases, request a refund through OpenAI Support while signed into the charged account; Apple purchases are handled by Apple.",
+    "Refund eligibility depends on the purchase and applicable policies or legal rights; approval is not guaranteed."
+  ],
+  "source_links": [
+    "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
+    "https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription"
+  ]
+}

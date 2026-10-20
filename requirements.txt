@@ -1,0 +1,6 @@
+# Python 3.11+ (asyncio.timeout); unittest and email are standard library.
+streamlit>=1.38,<2
+mcp>=1.9,<2
+openai>=1.50,<3
+google-auth>=2.29,<3
+requests>=2.31,<3

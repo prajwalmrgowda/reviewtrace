@@ -1,0 +1,63 @@
+{
+  "product": "ChatGPT",
+  "app_id": "6448311069",
+  "storefront": "US",
+  "sort": "mostrecent",
+  "as_of": "2026-10-20",
+  "weeks": 12,
+  "date_semantics": "Apple RSS updated timestamp; may reflect a review edit, not original publication",
+  "retrieved_at": "2026-10-20T18:25:59.242250+00:00",
+  "row_count": 500,
+  "captures": [
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_1.json",
+      "sha256": "390a9e05c6fcc1ffbe63db590c5b3c515f42cdea76d4fbbc13de3b689caa7687"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=2/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_2.json",
+      "sha256": "757c68d0b68fbd76da80bfa14c1412ecc4848d8426b3d33d54519e7a7ff930a5"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=3/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_3.json",
+      "sha256": "70e46ccfa77099085cb8dd68b78c01890da0216166850202b0bfd5b327bb6c35"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=4/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_4.json",
+      "sha256": "1b2d2eeca6fbb868c31b8094365beaaad8dce1e4eb25b6e16329ff12d9931557"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=5/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_5.json",
+      "sha256": "a054c934c94fd0b0957564c12475f17c8a0bee2234ec44b5611d2226fbff9fe7"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=6/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_6.json",
+      "sha256": "504897b2a1cc7674d13964b8839e332da75565d82e478a949a5fc14a3760da43"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=7/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_7.json",
+      "sha256": "8eca77002089c343e353d89f3519eb1948e4da7282f57eb04740589a9e3291a1"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=8/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_8.json",
+      "sha256": "e4aef4fa96c97e23f99287481279a9f648759d1d369de80363b3f19919e5a2c6"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=9/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_9.json",
+      "sha256": "27df6406b8723ed88da16f6ff079a5739f3e23b81b6a48e38c8c43a8ab3f42c9"
+    },
+    {
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=10/id=6448311069/sortby=mostrecent/json",
+      "path": "data/source_snapshots/apple_us_page_10.json",
+      "sha256": "ebced1db8a564fe31e8dbb63cfeee0ef073edd82d938c65a7f14bbdf381cce4c"
+    }
+  ]
+}
