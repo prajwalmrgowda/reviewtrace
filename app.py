@@ -15,7 +15,20 @@ from google_docs import document_id as parse_document_id, check_document
 ROOT=Path(__file__).resolve().parent
 st.set_page_config(page_title='ReviewTrace', page_icon='📊', layout='wide')
 st.markdown('''<style>
+html{font-size:18px}
 .block-container{padding-top:2rem;padding-bottom:3rem;max-width:1140px}
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stText"]{font-size:1rem;line-height:1.6}
+[data-testid="stCaptionContainer"] p{font-size:.9rem;line-height:1.5}
+[data-testid="stWidgetLabel"] p,
+[data-testid="stTabs"] [role="tab"] p,
+button p{font-size:1rem}
+[data-testid="stSidebar"] h1{font-size:1.8rem;line-height:1.25;overflow-wrap:break-word}
+[data-testid="stSidebar"] h2{font-size:1.45rem}
+[data-testid="stSidebar"] h3{font-size:1.2rem}
+[data-testid="stSidebar"] input{font-size:1rem}
+
 h1,h2,h3{letter-spacing:-.025em}
 [data-testid="stMetric"]{
     background:var(--secondary-background-color,transparent);
