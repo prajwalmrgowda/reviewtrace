@@ -106,6 +106,24 @@ class GoogleDocsTests(unittest.TestCase):
                     output_dir=d,notes_destination='google_docs',document_id=DOC))
             self.assertEqual(list(Path(d).iterdir()),[])
 
+    def test_verified_connection_persists_and_new_doc_requires_check_and_approval(self):
+        from streamlit.testing.v1 import AppTest
+        metadata={'document_id':DOC,'title':'Product notes','url':f'https://docs.google.com/document/d/{DOC}/edit'}
+        with patch.dict(os.environ,{'GOOGLE_APPLICATION_CREDENTIALS':'/tmp/test-only-credentials.json'}),patch('google_docs.check_document',return_value=metadata) as check:
+            app=AppTest.from_file(str(ROOT/'app.py')).run()
+            app.radio[0].set_value('Google Docs').run()
+            next(item for item in app.text_input if item.label=='Google Doc URL or ID').set_value(DOC).run()
+            next(button for button in app.button if button.label=='Check Google Docs connection').click().run()
+            check.assert_called_once()
+            self.assertTrue(any('Connected: Product notes' in message.value for message in app.success))
+            app.checkbox[0].check().run()
+            self.assertTrue(any('Connected: Product notes' in message.value for message in app.success))
+            self.assertFalse(next(button for button in app.button if button.label=='Append notes & create draft').disabled)
+            next(item for item in app.text_input if item.label=='Google Doc URL or ID').set_value(DOC+'2').run()
+            self.assertFalse(app.checkbox[0].value)
+            self.assertTrue(next(button for button in app.button if button.label=='Append notes & create draft').disabled)
+            self.assertFalse(app.exception)
+
     def test_docs_setup_does_not_crash_ui_or_enable_writes(self):
         from streamlit.testing.v1 import AppTest
         with patch.dict(os.environ,{},clear=True):

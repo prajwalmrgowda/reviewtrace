@@ -48,7 +48,9 @@ The explainer has **six bullets**, two official source links in a separate parag
 
 ## MCP approval and destinations
 
-In **Approve & export**:
+The interface uses theme-aware metric cards, numbered workflow tabs and persistent Google Docs connection status. The optional AI settings and technical previews are collapsed by default.
+
+In **4. Save & export**:
 
 1. Inspect the exact notes JSON, subject, and email body.
 2. Choose local notes or Google Docs in the sidebar, verify the destination, then check the explicit approval checkbox.
